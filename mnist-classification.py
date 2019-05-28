@@ -93,6 +93,11 @@ model.save_weights('my_model.h5', save_format='h5')
 # Save entire model to a HDF5 file
 model.save('my_entire_model.h5')
 
+#Convertir modelo a formato TFLITE para usar en una app movil
+converter = tf.lite.TFLiteConverter.from_keras_model_file("my_entire_model.h5")
+tflite_model = converter.convert()
+open("converted_model.tflite", "wb").write(tflite_model)
+
 """
 guardar el modelo en formato PNG
 rankdir='TB' grafico vertical, "LR" horizontal
