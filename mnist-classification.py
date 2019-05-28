@@ -53,7 +53,7 @@ y_train = tf.keras.utils.to_categorical(y_train, num_classes=10)
 
 
 #entrenar el modelo, en 5 epocas o pasadas
-num_epochs = 5
+num_epochs = 1
 model.fit(x_train, y_train, epochs = num_epochs)
 
 #opcional: convertir a 0s y 1s para usar categorical_crossentropy
@@ -63,4 +63,6 @@ y_test = tf.keras.utils.to_categorical(y_test, num_classes=10)
 model.evaluate(x_test, y_test)
 
 #guardar el modelo en formato PNG
-tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True, rankdir='TB')
+#tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True, rankdir='TB')
+
+#tf.keras.utils.print_summary(model, line_length=None, positions=None, print_fn=None)
