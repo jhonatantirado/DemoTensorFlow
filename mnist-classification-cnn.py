@@ -1,5 +1,7 @@
 #https://www.tensorflow.org/tutorials/estimators/cnn
 #https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
+#State of the art for MNIST: https://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354
+#https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import tensorflow as tf
