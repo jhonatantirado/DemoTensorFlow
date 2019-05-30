@@ -2,6 +2,8 @@
 #https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
 #State of the art for MNIST: https://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354
 #https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0
+#Demora 8 minutos en entrenar la red neuronal
+
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import tensorflow as tf
@@ -102,7 +104,7 @@ train_input_fn = tf.estimator.inputs.numpy_input_fn(
     num_epochs=None,
     shuffle=True)
 
-# train one step and display the probabilties
+# train one step and display the probabilities
 mnist_classifier.train(
     input_fn=train_input_fn,
     steps=1,
