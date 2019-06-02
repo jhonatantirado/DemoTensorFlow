@@ -71,10 +71,10 @@ callbacks = [
 Entrenar el modelo, en 5 épocas
 Usar callbacks para extender el comportamiento durante el entrenamiento
 Los callbacks se activan cuando se usan 20 épocas, por ejemplo
-Para ver los datos en TensorBoard ejecutar: tensorboard --logdir=path/to/log-directory
+Para ver los datos en TensorBoard ejecutar: tensorboard --logdir=logs
 Ir a: http://localhost:6006
 """
-num_epochs = 1
+num_epochs = 20
 model.fit(x_train, y_train, epochs = num_epochs,callbacks=callbacks,
           validation_data=(x_test, y_test))
 
